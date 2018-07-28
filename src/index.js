@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
-import Admin from './admin';
+import AdminRouter from './router';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Admin />, document.getElementById('root'));
+ReactDOM.render(<AdminRouter />, document.getElementById('root'));
 registerServiceWorker();
