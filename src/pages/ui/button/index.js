@@ -3,6 +3,14 @@ import { Card, Button } from 'antd'
 
 export default class Buttons extends React.Component {
 
+    state = {
+        
+    }
+
+    handleClick =() => {
+        // console.log('button');
+    }
+
     render() {
         return (
             <div>
@@ -15,6 +23,7 @@ export default class Buttons extends React.Component {
                 </Card> 
                 <Card title='图形按钮'>
                     <Button icon=''></Button>
+                    <Button onClick={this.handleClick}>取消</Button>
                 </Card> 
             </div>
         );
