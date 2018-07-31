@@ -1,18 +1,5 @@
 react-antd 一套后台管理模板 v1.0.0
-
-## 项目地址
-  https://github.com/gmw-zjw/react-admin
-
-## 下载
-  git conle https://github.com/gmw-zjw/react-admin
-
-## 安装配置
-  cd react-damin && yarn 
-
-## 启动
-  yarn start      
-
-
+```javascript
 ## 项目结构
 +-- build/                                  ---打包后的文件目录
 +-- config/                                 ---npm run eject 后的配置文件目录
@@ -56,6 +43,22 @@ react-antd 一套后台管理模板 v1.0.0
 --- .env                                    ---启动项目自定义端口配置文件
 --- .eslintrc                               ---自定义eslint配置文件，包括增加的react jsx语法限制
 --- package.json
+
+```
+
+
+## 项目地址
+  https://github.com/gmw-zjw/react-admin
+
+## 下载
+  git conle https://github.com/gmw-zjw/react-admin
+
+## 安装配置
+  cd react-damin && yarn 
+
+## 启动
+  yarn start      
+
 
 
 ### 后续功能还在添加中
