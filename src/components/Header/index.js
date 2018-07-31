@@ -36,7 +36,7 @@ export default class Header extends React.Component {
     };
 
     getWeatherData() {
-        let city = '上海'; // 传去城市.目前是固定的,之后会根据用户所选的城市
+        let city = '上海'; // 城市
         axios.jsonp({
             url: 'http://api.map.baidu.com/telematics/v3/weather?location='+ encodeURIComponent(city) +'&output=json&ak=CGTXytKWYfgL55ID0ZSlce67F4gWsXi9'
         }).then((res) =>{
@@ -58,7 +58,7 @@ export default class Header extends React.Component {
                 <Row className='header-top'>
                     <Col span='24'>
                         <span>欢迎, {this.state.username}</span>
-                        <a href='#'>退出</a>
+                        <a href='javascript:;'>退出</a>
                     </Col>
                 </Row>
                 <Row className='breadcrumd'>

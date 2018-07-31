@@ -124,7 +124,10 @@ const menuList = [
     {
         title:'权限设置',
         key:'/permission'
-    },
+    },{
+        title: '地图',
+        key: '/map'
+    }
 ];
 export default menuList;
 
