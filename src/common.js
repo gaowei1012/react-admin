@@ -1,12 +1,18 @@
 import React from 'react';
-import { Card } from 'antd';
+import { Row } from 'antd';
+import Header from './components/Header';
 
 export default class Common extends React.Component {
 
     render() {
         return (
             <div>
-                this is common pages;
+                <Row>
+                    <Header />
+                </Row>
+                <Row>
+                    {this.props.children}
+                </Row>
             </div>
         );
     }

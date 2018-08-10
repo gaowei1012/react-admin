@@ -6,6 +6,7 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import Util from '../../util/index';
 import axios from '../../axios/index';
+import moment from 'moment';
 
 import './index.less';
 
@@ -16,6 +17,11 @@ export default class Header extends React.Component {
         sysTime: '',
         dayPictureUrl: '',
         weather: ''
+    }
+
+    componentDidMount() {
+        const time = moment('2018-8-12').format('YYYY:HH:DD');
+        console.log(time);
     }
 
     componentWillMount() {

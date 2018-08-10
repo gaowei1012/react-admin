@@ -1,8 +1,6 @@
 react-antd 一套后台管理模板 v1.0.0
-
-## 项目结构
-
 ```javascript
+## 项目结构
 +-- build/                                  ---打包后的文件目录
 +-- config/                                 ---npm run eject 后的配置文件目录
 +-- node_modules/                           ---npm下载文件目录

@@ -2,6 +2,10 @@ import JsonP from 'jsonp'
 import axios from 'axios'
 import { Modal } from 'antd'
 export default class Axios {
+    /**
+     * JSONP
+     * @param {*} options 
+     */
     static jsonp(options) {
         return new Promise((resolve, reject) => {
             JsonP(options.url, {
@@ -16,6 +20,10 @@ export default class Axios {
         })
     }
 
+     /**
+     * ajax请求
+     * @param {*} options 
+     */
     static ajax(options){
         let loading;
         if (options.data && options.data.isShowLoading !== false){
@@ -36,7 +44,6 @@ export default class Axios {
                     loading.style.display = 'none';
                 }
                 if (response.status == '200'){
-                    debugger
                     let res = response.data;
                     if (res.code == '0'){
                         resolve(res);
