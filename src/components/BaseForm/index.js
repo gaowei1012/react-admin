@@ -34,7 +34,7 @@ class FilterForm extends React.Component {
                 let width = item.width;
                 let placeholder = item.placeholder;
 
-                if (item.type == 'Seach_Time') {
+                if (item.type == '时间查询') {
                     const begin_time = <FormItem label="订单时间" key={field}>
                         {
                             getFieldDecorator('begin_time')(
@@ -52,7 +52,23 @@ class FilterForm extends React.Component {
                         }
                     </FormItem>
                     formItemList.push(end_time)
-                } else if (item.type == 'INPUT') {
+                } else if (item.type == '城市') {
+                    const city = <FormItem label='城市选择'>
+                        {
+                            getFieldDecorator('city', {
+                                initialValue: '0'
+                            })(
+                                <Select
+                                    style={{ width: 80 }}
+                                    placeholder={placeholder}
+                                >
+                                    {Utils.getOptionList(item.list)}
+                                </Select>
+                            )
+                        }
+                    </FormItem>
+                    formItemList.push(city);
+                }else if (item.type == 'INPUT') {
                     const INPUT = <FormItem label={label} key={field}>
                         {
                             getFieldDecorator([field], {
@@ -71,7 +87,7 @@ class FilterForm extends React.Component {
                                 initialValue: initialValue
                             })(
                                 <Select
-                                    style={{width: width}}
+                                    style={{ width: width }}
                                     placeholder={placeholder}
                                 >
                                     {Utils.getOptionList(item.list)}
@@ -105,7 +121,7 @@ class FilterForm extends React.Component {
             <Form layout='inline'>
                 {this.initFormList()}
                 <FormItem>
-                    <Button type='primary' onClick={this.handleSubmit} style={{margin: '0 20px'}}>查询</Button>
+                    <Button type='primary' onClick={this.handleSubmit} style={{ margin: '0 20px' }}>查询</Button>
                     <Button onClick={this.reset}>重置</Button>
                 </FormItem>
             </Form>

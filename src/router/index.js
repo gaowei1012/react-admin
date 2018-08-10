@@ -20,6 +20,13 @@ import City from './../pages/city'
 import Common from '../common'
 import User from './../pages/user'
 import Order from '../pages/order'
+import BikeMap from '../pages/map/bikeMap'
+import BarEchart from '../pages/echarts/bar'
+import PieEchart from '../pages/echarts/pie'
+import LineEchart from '../pages/echarts/line'
+import RichText from '../pages/rich'
+import PermissionUser from '../pages/permission'
+
 
 export default class AdminRouter extends React.Component {
 
@@ -46,6 +53,12 @@ export default class AdminRouter extends React.Component {
                                 <Route path='/admin/city' component={City} />
                                 <Route path='/admin/order' component={Order} />
                                 <Route path='/admin/user' component={User} />
+                                <Route path='/admin/bikeMap' component={BikeMap} />
+                                <Route path='/admin/charts/bar' component={BarEchart} />
+                                <Route path='/admin/charts/pie' component={PieEchart} />
+                                <Route path='/admin/charts/line' component={LineEchart} />
+                                <Route path='/admin/rich' component={RichText} />
+                                <Route path='/admin/permission' component={PermissionUser} />
                                 <Route component={NoMatch} />
                             </Switch>
                         </Admin>
