@@ -1,5 +1,4 @@
-import { type } from './../action'
-
+import {type} from './../action/index'
 /**
  * initialState
  */
