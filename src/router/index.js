@@ -48,7 +48,7 @@ export default class AdminRouter extends React.Component {
                                 <Route path='/admin/ui/message' component={Message} />
                                 <Route path='/admin/ui/gallery' component={Gallery} />
                                 <Route path='/admin/form/login' component={FormLogin} />
-                                <Route path='/admin/form/regiser' component={FormRegiser} />
+                                <Route path='/admin/form/register' component={FormRegiser} />
                                 <Route path='/admin/table/basic' component={BasicTable} />
                                 <Route path='/admin/city' component={City} />
                                 <Route path='/admin/order' component={Order} />
