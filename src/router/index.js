@@ -13,6 +13,7 @@ import Tabs from './../pages/ui/tabs'
 import Notification from './../pages/ui/notification'
 import Message from './../pages/ui/messages'
 import Gallery from './../pages/ui/gallery'
+import Carousel from './../pages/ui/carousel'
 import FormLogin from './../pages/form/login'
 import FormRegiser from './../pages/form/register'
 import BasicTable from './../pages/table/basicTable'
@@ -39,14 +40,15 @@ export default class AdminRouter extends React.Component {
                     <Route path='/admin' render={() =>
                         <Admin>
                             <Switch>
-                                <Route path='/amdin/home' component={Home} />
-                                <Route path='/admin/ui/button' component={Buttons} />
-                                <Route path='/admin/ui/loading' component={Loading} />
-                                <Route path='/admin/ui/modal' component={Modal} />
+                                <Route path='/admin/home' component={Home} />
+                                <Route path='/admin/ui/buttons' component={Buttons} />
+                                <Route path='/admin/ui/loadings' component={Loading} />
+                                <Route path='/admin/ui/modals' component={Modal} />
                                 <Route path='/admin/ui/tabs' component={Tabs} />
                                 <Route path='/admin/ui/notification' component={Notification} />
-                                <Route path='/admin/ui/message' component={Message} />
+                                <Route path='/admin/ui/messages' component={Message} />
                                 <Route path='/admin/ui/gallery' component={Gallery} />
+                                <Route path='/admin/ui/carousel' component={Carousel} />
                                 <Route path='/admin/form/login' component={FormLogin} />
                                 <Route path='/admin/form/register' component={FormRegiser} />
                                 <Route path='/admin/table/basic' component={BasicTable} />
