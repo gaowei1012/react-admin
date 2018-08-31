@@ -1,6 +1,10 @@
 // 主路由模块
-import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { 
+    HashRouter as Router,
+    Route,
+    Switch
+} from 'react-router-dom'
 import App from '../App.js'
 import Login from './../pages/login'
 import Admin from './../admin'
@@ -34,13 +38,12 @@ export default class AdminRouter extends React.Component {
     render() {
         return (
             <Router>
-                {/* comm */}
                 <App>
-                    <Route path='/login' component={Login} />
+                    <Route path='/login' exact component={Login} />
                     <Route path='/admin' render={() =>
                         <Admin>
                             <Switch>
-                                <Route path='/admin/home' component={Home} />
+                                <Route path='/admin/home' exact component={Home} />
                                 <Route path='/admin/ui/buttons' component={Buttons} />
                                 <Route path='/admin/ui/loadings' component={Loading} />
                                 <Route path='/admin/ui/modals' component={Modal} />

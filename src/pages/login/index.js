@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Card, Form, Icon, Input, Button, Checkbox, message } from 'antd'
 import './index.less'
 
 const FormItem = Form.Item;
 
-class FormLogin extends React.Component {
+class FormLogin extends Component {
 
     handleSubmit = () => {
         let userInfo = this.props.form.getFieldsValue();
